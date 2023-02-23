@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css">
     <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css">
     <link rel="icon" href="../static/images/icon.png" />
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	  <script src="static/scripts/1-hbnb.js" defer></script>
     <title>HBnB</title>
   </head>
@@ -43,7 +43,7 @@
 	    <ul>
 	      {% for amenity in amenities %}
 	      <li>
-			  <input type="checkbox" data_id=":amenity_id" data_name=":amenity_name" placeholder="{{ amenity.name }}"/>
+			  <input type="checkbox" data_id="{{ amenity.id }}" data_name="{{ amenity.name }}"> {{ amenity.name }}
 		  </li>
 	      {% endfor %}
 	    </ul>
